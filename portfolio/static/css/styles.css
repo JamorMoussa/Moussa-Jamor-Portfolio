@@ -1,0 +1,17 @@
+
+
+.th-zero {
+    min-height: 30vh;
+    padding: 1rem; 
+}
+
+.th-one {
+    background-color: #EEEEEE;
+    min-height: 30vh;
+    border-radius: 10px;
+    padding: 1rem; 
+}
+
+.header{
+    font-family: sans-serif;
+}
