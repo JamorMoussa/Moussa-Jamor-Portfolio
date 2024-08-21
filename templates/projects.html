@@ -2,17 +2,55 @@
 
 
 {% block projects%}
-<div class="container">
-    <h3>
-        Projects
-    </h3>
-    some content
+<div class="container card text-center" style="background-color: transparent; border: none;">
+    <div class="card-header" style="background-color: transparent;">
+        <h4>Projects</h4>
+    </div>    
 
-    <!-- {% for item in data %}
-        <div>
-            <h1>{{item.name}}</h1>
-            <h2>
+    <div class="container my-4">
+        <div class="row">
+            {% for i in range(5) %}
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <a class="card" href="https://github.com/JamorMoussa/Moussa-Jamor-Portfolio/">
+                        <img src="{{ url_for('static', filename='images/image.png')}}" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <p class="card-text">State of GPT @ Microsoft Build 2023</p>
+                        </div>
+                    </a>
+                </div>            
+            {% endfor %}
+            <!-- Add more cards as needed -->
         </div>
+    </div>
+
+    <!-- {% for i in range(10) %}
+
+    <div class="container">
+        {{i}}
+    </div>
     {% endfor%} -->
+
 </div>
 {% endblock%}
+
+
+<!-- 
+
+###########################################
+code for cards 
+
+
+<div class="container my-4">
+    <div class="row">
+        <a href="">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/image.png')}}" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <p class="card-text">State of GPT @ Microsoft Build 2023 <a href="#">(slides)</a></p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div> -->
