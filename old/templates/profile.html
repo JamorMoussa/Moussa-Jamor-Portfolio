@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block profile %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 d-none d-lg-block"></div> <!-- Hidden on small screens -->
+        <div class="col-lg-9 col-12 row">
+            <div class="col-md-4 col-12 text-center text-md-left">
+                <div class="profile-img-container">
+                    <img class="profile-img" src="{{ url_for('static', filename='images/image.png') }}" alt="">
+                </div>
+            </div>
+            <div class="col-md-8 col-12 position-relative">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h1>Moussa JAMOR</h1>
+                    <div>
+                        I like to train neural Nets.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

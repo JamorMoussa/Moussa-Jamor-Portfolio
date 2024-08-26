@@ -1,0 +1,23 @@
+
+.profile {
+    border-radius: 5px;
+}
+
+.profile-img{
+    grid-column: span 6;
+    text-align: right;
+}
+
+.desc-div {
+    text-align: left;
+}
+
+.profile-img img{
+    clip-path: circle();
+}
+
+@media (max-width: 760px) {
+    .profile-img, .desc-div{
+        text-align: center;
+    }
+}

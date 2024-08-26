@@ -1,5 +1,20 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block profile%}
-    <h1>Hello</h1>
+
+{% block profile %}
+<div class="container row">
+    <div class="container col-1"></div>
+    <div class="container profile row mt-4 col-10 bg-light p-2 flex-column-inverse">
+        <div class="container profile-img col-4">
+            <img src="{{ url_for('static', filename='images/jamor.png') }}" alt="">
+        </div>
+        <div class="container desc-div col-8">
+            <h1>Moussa Jamor</h1>
+            <div>
+                Hey I like train deep Nets.
+            </div>
+        </div>
+        <div class="container col-1"></div>
+    </div>
+</div>
 {% endblock %}
